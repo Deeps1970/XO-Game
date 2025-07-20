@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+main #gameHERO {
+    margin-bottom: 30px; ;
+}
+main .xSpan {
+    color:#1892ea;
+}
+main .oSpan {
+    color:#a737ff;
+}
+
+main {
+    background: rgb(0, 10, 37);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#header {
+    display: flex;
+    max-width: 300px;
+    width: 300px;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+#header .player {
+    background-color: rgb(15, 29, 69);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    border: solid 5px rgb(0, 10, 37);
+    border-radius: 20px;
+    opacity: 0.5;
+}
+
+#header .player:hover {
+    cursor: pointer;
+    background-color: #140f2c;
+    transition: 0.5s;
+    border: solid 4px #5d5b5b;
+}
+
+#header .player-active {
+    opacity: 1;
+    border: solid 4px #5d5b5b;
+}
+
+#header #xPlayerDisplay {
+    color: #1892ea;
+}
+
+#header #oPlayerDisplay {
+    color: #a737ff;
+}
+
+#header #titleHeader {
+    padding-top: 15px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 95px);
+    grid-template-rows: repeat(3, 95px);
+    gap: 10px;
+}
+
+#board .cell {
+    border: solid 4px rgb(26, 24, 55);
+    border-radius: 20px;
+    background-color: #111436;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.3s background;
+}
+
+#board .cell:hover {
+    cursor: pointer;
+    background: #272849;
+}
+
+#restartBtn {
+    background: #111436;
+    margin-top: 30px;
+    width: 300px;
+    height: 70px;
+    border: none;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s background;
+    visibility: hidden;
+}
+
+#restartBtn:hover {
+    cursor: pointer;
+    background: #272849;
+}
