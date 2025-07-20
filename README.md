@@ -6,7 +6,7 @@ An interactive **Tic Tac Toe** game built with HTML, CSS, and JavaScript. Choose
 
 ---
 
-## Live Demo
+## 🖥️ Live Demo
 
 [Click Here to See Live Demo!](https://deeps1970.github.io/ApexPlanet-Task2-Internship/)
 
